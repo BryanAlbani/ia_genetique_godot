@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://br4jobq8njufs"]
+
+[ext_resource type="PackedScene" uid="uid://bejie7qk633bm" path="res://Scene/tile_map.tscn" id="1_7ap1n"]
+[ext_resource type="PackedScene" uid="uid://ck1rlqf6n1uwm" path="res://Scene/spike.tscn" id="2_81yfc"]
+
+[node name="Map" type="Node2D"]
+
+[node name="TileMap" parent="." instance=ExtResource("1_7ap1n")]
+
+[node name="SpkieAll" type="Node" parent="."]
+
+[node name="Spike" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+position = Vector2(200, 93)
+
+[node name="Spike2" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+position = Vector2(280, 93)
+
+[node name="Spike3" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+position = Vector2(359, 94)
+
+[node name="Spike4" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+position = Vector2(456, 95)
+
+[node name="Spike5" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+position = Vector2(520, 95)
+
+[node name="Spike6" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+position = Vector2(584, 95)
+
+[node name="Spike7" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+position = Vector2(663, 95)
+
+[node name="Spike8" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+position = Vector2(728, 95)
+
+[node name="Spike9" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+position = Vector2(488, 16)
+
+[node name="Spike10" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+position = Vector2(392, -49)
+
+[node name="Spike11" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+position = Vector2(456, -129)
+
+[node name="Spike12" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+position = Vector2(632, -81)
+
+[node name="Spike13" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+position = Vector2(600, -177)
+
+[node name="Spike14" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+position = Vector2(632, -272)
