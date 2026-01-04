@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://ccs1ct04vr1th"]
+
+[ext_resource type="Texture2D" uid="uid://dhbktngw12ul4" path="res://Art/kenney_pixel-platformer/Tilemap/tilemap-characters.png" id="1_50uss"]
+[ext_resource type="Script" uid="uid://cxv73vx0fs52q" path="res://Script/perso.gd" id="1_51gvd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_51gvd"]
+atlas = ExtResource("1_50uss")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_50xaj"]
+atlas = ExtResource("1_50uss")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yf7cl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_51gvd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_50xaj")
+}],
+"loop": true,
+"name": &"Walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_50uss"]
+size = Vector2(23, 26.5)
+
+[sub_resource type="SeparationRayShape2D" id="SeparationRayShape2D_50uss"]
+
+[node name="Perso" type="Area2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_51gvd")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 1)
+scale = Vector2(1, 1.0833334)
+sprite_frames = SubResource("SpriteFrames_yf7cl")
+animation = &"Walk"
+frame = 1
+frame_progress = 0.6485738
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.75)
+shape = SubResource("RectangleShape2D_50uss")
+
+[node name="RaycastJump" type="CollisionShape2D" parent="."]
+position = Vector2(18, -6)
+shape = SubResource("SeparationRayShape2D_50uss")

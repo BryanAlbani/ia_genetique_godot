@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://br4jobq8njufs"]
+[gd_scene load_steps=4 format=3 uid="uid://br4jobq8njufs"]
 
 [ext_resource type="PackedScene" uid="uid://bejie7qk633bm" path="res://Scene/tile_map.tscn" id="1_7ap1n"]
 [ext_resource type="PackedScene" uid="uid://ck1rlqf6n1uwm" path="res://Scene/spike.tscn" id="2_81yfc"]
+[ext_resource type="PackedScene" uid="uid://ccs1ct04vr1th" path="res://Scene/perso.tscn" id="3_ex5br"]
 
 [node name="Map" type="Node2D"]
 
@@ -50,3 +51,6 @@ position = Vector2(600, -177)
 
 [node name="Spike14" parent="SpkieAll" instance=ExtResource("2_81yfc")]
 position = Vector2(632, -272)
+
+[node name="Perso" parent="." instance=ExtResource("3_ex5br")]
+position = Vector2(88, 6)
