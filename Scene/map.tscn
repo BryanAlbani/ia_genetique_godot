@@ -1,7 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://br4jobq8njufs"]
+[gd_scene load_steps=9 format=3 uid="uid://br4jobq8njufs"]
 
 [ext_resource type="PackedScene" uid="uid://bejie7qk633bm" path="res://Scene/tile_map.tscn" id="1_7ap1n"]
 [ext_resource type="PackedScene" uid="uid://ck1rlqf6n1uwm" path="res://Scene/spike.tscn" id="2_81yfc"]
+[ext_resource type="Script" uid="uid://ctc70x48j7nt0" path="res://Script/Checkpoint.gd" id="3_ex5br"]
+[ext_resource type="Script" uid="uid://d78lh3xo1m5l" path="res://Script/Finish.gd" id="4_5mejs"]
+[ext_resource type="Script" uid="uid://jkpoo7hvkoj0" path="res://Script/GAController.gd" id="5_s12we"]
+[ext_resource type="PackedScene" uid="uid://ccs1ct04vr1th" path="res://Scene/perso.tscn" id="6_54rcs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_54rcs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_81yfc"]
+size = Vector2(16, 489)
 
 [node name="Map" type="Node2D"]
 
@@ -10,43 +19,222 @@
 [node name="SpkieAll" type="Node" parent="."]
 
 [node name="Spike" parent="SpkieAll" instance=ExtResource("2_81yfc")]
-position = Vector2(200, 93)
+position = Vector2(231, 56)
+
+[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike/Area2D2"]
+shape = SubResource("RectangleShape2D_54rcs")
 
 [node name="Spike2" parent="SpkieAll" instance=ExtResource("2_81yfc")]
-position = Vector2(280, 93)
+position = Vector2(328, 55)
+
+[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike2"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike2/Area2D2"]
+shape = SubResource("RectangleShape2D_54rcs")
 
 [node name="Spike3" parent="SpkieAll" instance=ExtResource("2_81yfc")]
-position = Vector2(359, 94)
+position = Vector2(423, 55)
+
+[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike3"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike3/Area2D2"]
+shape = SubResource("RectangleShape2D_54rcs")
 
 [node name="Spike4" parent="SpkieAll" instance=ExtResource("2_81yfc")]
-position = Vector2(456, 95)
+position = Vector2(518, 55)
+
+[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike4"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike4/Area2D2"]
+shape = SubResource("RectangleShape2D_54rcs")
 
 [node name="Spike5" parent="SpkieAll" instance=ExtResource("2_81yfc")]
-position = Vector2(520, 95)
+position = Vector2(616, 59)
+
+[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike5"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike5/Area2D2"]
+shape = SubResource("RectangleShape2D_54rcs")
 
 [node name="Spike6" parent="SpkieAll" instance=ExtResource("2_81yfc")]
-position = Vector2(584, 95)
+position = Vector2(710, 54)
+
+[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike6"]
+collision_layer = 2
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike6/Area2D2"]
+shape = SubResource("RectangleShape2D_54rcs")
 
 [node name="Spike7" parent="SpkieAll" instance=ExtResource("2_81yfc")]
-position = Vector2(663, 95)
+position = Vector2(664, -7)
+
+[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike7"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike7/Area2D2"]
+shape = SubResource("RectangleShape2D_54rcs")
 
 [node name="Spike8" parent="SpkieAll" instance=ExtResource("2_81yfc")]
-position = Vector2(728, 95)
+position = Vector2(682, -58)
+
+[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike8"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike8/Area2D2"]
+shape = SubResource("RectangleShape2D_54rcs")
 
 [node name="Spike9" parent="SpkieAll" instance=ExtResource("2_81yfc")]
-position = Vector2(488, 16)
+position = Vector2(472, -8)
+
+[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike9"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike9/Area2D2"]
+shape = SubResource("RectangleShape2D_54rcs")
 
 [node name="Spike10" parent="SpkieAll" instance=ExtResource("2_81yfc")]
-position = Vector2(392, -49)
+position = Vector2(552, -55)
+
+[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike10"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike10/Area2D2"]
+shape = SubResource("RectangleShape2D_54rcs")
 
 [node name="Spike11" parent="SpkieAll" instance=ExtResource("2_81yfc")]
-position = Vector2(456, -129)
+position = Vector2(550, -122)
+
+[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike11"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike11/Area2D2"]
+shape = SubResource("RectangleShape2D_54rcs")
 
 [node name="Spike12" parent="SpkieAll" instance=ExtResource("2_81yfc")]
-position = Vector2(632, -81)
+position = Vector2(679, -154)
+
+[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike12"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike12/Area2D2"]
+shape = SubResource("RectangleShape2D_54rcs")
 
 [node name="Spike13" parent="SpkieAll" instance=ExtResource("2_81yfc")]
-position = Vector2(600, -177)
+position = Vector2(584, -202)
+
+[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike13"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike13/Area2D2"]
+shape = SubResource("RectangleShape2D_54rcs")
 
 [node name="Spike14" parent="SpkieAll" instance=ExtResource("2_81yfc")]
-position = Vector2(632, -272)
+position = Vector2(696, -249)
+
+[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike14"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike14/Area2D2"]
+shape = SubResource("RectangleShape2D_54rcs")
+
+[node name="Spike15" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+position = Vector2(569, -248)
+
+[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike15"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike15/Area2D2"]
+shape = SubResource("RectangleShape2D_54rcs")
+
+[node name="Spike16" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+position = Vector2(696, -249)
+
+[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike16"]
+position = Vector2(-16, 46)
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike16/Area2D2"]
+shape = SubResource("RectangleShape2D_54rcs")
+
+[node name="Area2D 1" type="Area2D" parent="."]
+position = Vector2(33, 0)
+script = ExtResource("3_ex5br")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D 1"]
+position = Vector2(216, -134)
+shape = SubResource("RectangleShape2D_81yfc")
+
+[node name="Area2D 2" type="Area2D" parent="."]
+position = Vector2(129, 0)
+script = ExtResource("3_ex5br")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D 2"]
+position = Vector2(216, -134)
+shape = SubResource("RectangleShape2D_81yfc")
+
+[node name="Area2D 3" type="Area2D" parent="."]
+position = Vector2(144, 0)
+script = ExtResource("3_ex5br")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D 3"]
+position = Vector2(296, -134)
+shape = SubResource("RectangleShape2D_81yfc")
+
+[node name="Area2D 4" type="Area2D" parent="."]
+position = Vector2(240, 0)
+script = ExtResource("3_ex5br")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D 4"]
+position = Vector2(296, -134)
+shape = SubResource("RectangleShape2D_81yfc")
+
+[node name="Area2D 5" type="Area2D" parent="."]
+position = Vector2(335, 0)
+script = ExtResource("3_ex5br")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D 5"]
+position = Vector2(296, -134)
+shape = SubResource("RectangleShape2D_81yfc")
+
+[node name="Finish" type="Area2D" parent="."]
+position = Vector2(354, 0)
+script = ExtResource("4_5mejs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Finish"]
+position = Vector2(375, -134)
+shape = SubResource("RectangleShape2D_81yfc")
+
+[node name="GAController" type="Node2D" parent="."]
+position = Vector2(9, 6)
+script = ExtResource("5_s12we")
+perso_scene = ExtResource("6_54rcs")
+spawn_pos = Vector2(9, 6)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(392, -132)
+
+[node name="SpawnPoint" type="Marker2D" parent="."]
+position = Vector2(134, 2)
