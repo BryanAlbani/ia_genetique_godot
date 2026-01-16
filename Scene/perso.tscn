@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://ccs1ct04vr1th"]
+[gd_scene load_steps=5 format=3 uid="uid://cp6kgrpbdd0g7"]
 
 [ext_resource type="Texture2D" uid="uid://dq2ecr6dydqle" path="res://Art/kenney_pixel-platformer/Tiles/Characters/tile_0000.png" id="1_50uss"]
-[ext_resource type="Script" uid="uid://lrq1wruu8xyd" path="res://Script/Perso.gd" id="1_51gvd"]
+[ext_resource type="Script" path="res://Script/Perso.gd" id="1_51gvd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_51gvd"]
 size = Vector2(23, 24)

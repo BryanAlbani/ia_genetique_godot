@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://ctc70x48j7nt0" path="res://Script/Checkpoint.gd" id="3_ex5br"]
 [ext_resource type="Script" uid="uid://d78lh3xo1m5l" path="res://Script/Finish.gd" id="4_5mejs"]
 [ext_resource type="Script" uid="uid://jkpoo7hvkoj0" path="res://Script/GAController.gd" id="5_s12we"]
-[ext_resource type="PackedScene" uid="uid://ccs1ct04vr1th" path="res://Scene/perso.tscn" id="6_54rcs"]
+[ext_resource type="PackedScene" path="res://Scene/perso.tscn" id="6_54rcs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_54rcs"]
 
