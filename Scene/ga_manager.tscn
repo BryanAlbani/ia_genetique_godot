@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgvdsnioxa24l"]
+
+[ext_resource type="Script" uid="uid://bjvjpxs51nokd" path="res://Script/ga_manager.gd" id="1_fp2xg"]
+
+[node name="GA_Manager" type="Node"]
+script = ExtResource("1_fp2xg")
+
+[node name="Timer" type="Timer" parent="."]

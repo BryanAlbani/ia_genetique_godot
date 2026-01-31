@@ -1,11 +1,263 @@
-[gd_scene load_steps=9 format=3 uid="uid://br4jobq8njufs"]
+[gd_scene load_steps=10 format=4 uid="uid://br4jobq8njufs"]
 
-[ext_resource type="PackedScene" uid="uid://bejie7qk633bm" path="res://Scene/tile_map.tscn" id="1_7ap1n"]
+[ext_resource type="Texture2D" uid="uid://cdpjeoyq0vj6g" path="res://Art/kenney_pixel-platformer/Tilemap/tilemap.png" id="1_s12we"]
 [ext_resource type="PackedScene" uid="uid://ck1rlqf6n1uwm" path="res://Scene/spike.tscn" id="2_81yfc"]
 [ext_resource type="Script" uid="uid://ctc70x48j7nt0" path="res://Script/Checkpoint.gd" id="3_ex5br"]
-[ext_resource type="Script" uid="uid://d78lh3xo1m5l" path="res://Script/Finish.gd" id="4_5mejs"]
-[ext_resource type="Script" uid="uid://jkpoo7hvkoj0" path="res://Script/GAController.gd" id="5_s12we"]
-[ext_resource type="PackedScene" uid="uid://cp6kgrpbdd0g7" path="res://Scene/perso.tscn" id="6_54rcs"]
+[ext_resource type="PackedScene" uid="uid://cgvdsnioxa24l" path="res://Scene/ga_manager.tscn" id="4_5mejs"]
+[ext_resource type="PackedScene" uid="uid://cvu3orapr3wfu" path="res://Scene/Bot.tscn" id="5_s12we"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_54rcs"]
+texture = ExtResource("1_s12we")
+0:0/next_alternative_id = 2
+0:0/0 = 0
+0:0/1 = 1
+0:0/1/physics_layer_0/polygon_0/points = PackedVector2Array(-6.115197, -6.115196, 6.4749146, -5.755479, 6.2950554, 8, -6.115197, 8)
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/next_alternative_id = 2
+6:0/0 = 0
+6:0/1 = 1
+6:0/1/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+16:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/next_alternative_id = 2
+19:0/0 = 0
+19:0/1 = 1
+19:0/1/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+20:0/0 = 0
+21:0/0 = 0
+22:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+16:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+20:1/0 = 0
+21:1/0 = 0
+22:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+16:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+20:2/0 = 0
+21:2/0 = 0
+22:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+16:3/0 = 0
+17:3/0 = 0
+18:3/0 = 0
+19:3/0 = 0
+20:3/0 = 0
+21:3/0 = 0
+22:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/next_alternative_id = 2
+9:4/0 = 0
+9:4/1 = 1
+10:4/next_alternative_id = 2
+10:4/0 = 0
+10:4/1 = 1
+11:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+16:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+22:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+16:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+22:5/0 = 0
+0:6/next_alternative_id = 2
+0:6/0 = 0
+0:6/1 = 1
+0:6/1/physics_layer_0/polygon_0/points = PackedVector2Array(-6.115197, -6.4749136, 8, -6.4749136, 8, 8, -5.935338, 8)
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+16:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+20:6/0 = 0
+21:6/0 = 0
+22:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+13:7/0 = 0
+14:7/0 = 0
+15:7/0 = 0
+16:7/0 = 0
+17:7/0 = 0
+18:7/0 = 0
+19:7/0 = 0
+20:7/0 = 0
+21:7/0 = 0
+22:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+11:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+16:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+21:8/0 = 0
+22:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+11:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+16:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+21:9/0 = 0
+22:9/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_31wal"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_54rcs")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_54rcs"]
 
@@ -13,228 +265,303 @@
 size = Vector2(16, 489)
 
 [node name="Map" type="Node2D"]
+position = Vector2(1, 0)
 
-[node name="TileMap" parent="." instance=ExtResource("1_7ap1n")]
+[node name="GroundLayer" type="TileMapLayer" parent="."]
+position = Vector2(1, 0)
+tile_map_data = PackedByteArray("AAAAAP//AAAAAAAAAQABAP//AAAAAAAAAQACAP//AAAAAAAAAQAOAAQAAAAGAAAAAQAPAAQAAAAGAAAAAQAPAAUAAAAGAAAAAQANAAQAAAAGAAAAAQAMAAQAAAAGAAAAAQALAAQAAAAGAAAAAQAJAAQAAAAGAAAAAQAKAAQAAAAGAAAAAQAJAAMAAAAGAAAAAQAJAAIAAAAGAAAAAQAJAAEAAAAGAAAAAQAJAAAAAAAGAAAAAQAIAAAAAAAGAAAAAQAHAAAAAAAGAAAAAQAGAAAAAAAGAAAAAQAFAAAAAAAGAAAAAQAEAAAAAAAGAAAAAQADAAAAAAAGAAAAAQACAAAAAAAGAAAAAQABAAAAAAAGAAAAAQAAAAAAAAAGAAAAAQAAAAEAAAAGAAAAAQAAAAIAAAAGAAAAAQAAAAMAAAAGAAAAAQAAAAQAAAAGAAAAAQABAAQAAAAGAAAAAQACAAQAAAAGAAAAAQADAAQAAAAGAAAAAQAEAAQAAAAGAAAAAQAFAAQAAAAGAAAAAQAGAAQAAAAGAAAAAQAHAAQAAAAGAAAAAQAIAAQAAAAGAAAAAQAIAAMAAAAGAAAAAQAIAAIAAAAGAAAAAQAIAAEAAAAGAAAAAQAHAAEAAAAGAAAAAQAGAAEAAAAGAAAAAQAFAAEAAAAGAAAAAQAEAAEAAAAGAAAAAQADAAEAAAAGAAAAAQACAAEAAAAGAAAAAQABAAEAAAAGAAAAAQABAAIAAAAGAAAAAQABAAMAAAAGAAAAAQACAAMAAAAGAAAAAQADAAMAAAAGAAAAAQAEAAMAAAAGAAAAAQAFAAMAAAAGAAAAAQAGAAMAAAAGAAAAAQAHAAMAAAAGAAAAAQAHAAIAAAAGAAAAAQAGAAIAAAAGAAAAAQAFAAIAAAAGAAAAAQAEAAIAAAAGAAAAAQADAAIAAAAGAAAAAQACAAIAAAAGAAAAAQADAP//AAAAAAAAAQAEAP//AAAAAAAAAQAFAP//AAAAAAAAAQAGAP//AAAAAAAAAQAHAP//AAAAAAAAAQAIAP//AAAAAAAAAQAJAP//AAAAAAAAAQAQAAQAAAAGAAAAAQARAAQAAAAGAAAAAQASAAQAAAAGAAAAAQATAAQAAAAGAAAAAQAUAAQAAAAGAAAAAQAVAAQAAAAGAAAAAQAWAAQAAAAGAAAAAQAXAAQAAAAGAAAAAQAYAAQAAAAGAAAAAQAZAAQAAAAGAAAAAQAaAAQAAAAGAAAAAQAbAAQAAAAGAAAAAQAcAAQAAAAGAAAAAQAeAAQAAAAGAAAAAQAfAAQAAAAGAAAAAQAgAAQAAAAGAAAAAQAhAAQAAAAGAAAAAQAiAAQAAAAGAAAAAQAjAAQAAAAGAAAAAQAkAAQAAAAGAAAAAQAlAAQAAAAGAAAAAQAmAAQAAAAGAAAAAQAnAAQAAAAGAAAAAQAoAAQAAAAGAAAAAQApAAQAAAAGAAAAAQAqAAQAAAAGAAAAAQArAAQAAAAGAAAAAQAsAAQAAAAGAAAAAQAVAAUAAAAGAAAAAQAbAAUAAAAGAAAAAQAhAAUAAAAGAAAAAQAnAAUAAAAGAAAAAQAtAAUAAAAGAAAAAQAdAAQAAAAGAAAAAQAOAAMAAAAKAAQAAQAUAAMAAAAKAAQAAQAaAAMAAAAKAAQAAQAgAAMAAAAKAAQAAQAmAAMAAAAKAAQAAQAdAP//AAAKAAQAAQAiAPz/AAAKAAQAAQAiAPj/AAAKAAQAAQAkAPP/AAAKAAQAAQApAP//AAAKAAQAAQAqAPz/AAAKAAQAAQAjAPD/AAAKAAQAAQAqAPP/AAAKAAQAAQArAPD/AAAKAAQAAQAqAPb/AAAKAAQAAQAsAAMAAAAKAAQAAQAtAAQAAAAGAAAAAQAuAAQAAAAGAAAAAQAuAAMAAAAGAAAAAQAuAAIAAAAGAAAAAQAuAAEAAAAGAAAAAQAuAAAAAAAGAAAAAQAuAP//AAAGAAAAAQAuAP7/AAAGAAAAAQAuAP3/AAAGAAAAAQAuAPz/AAAGAAAAAQAuAPv/AAAGAAAAAQAuAPr/AAAGAAAAAQAuAPn/AAAGAAAAAQAuAPj/AAAGAAAAAQAuAPf/AAAGAAAAAQAuAPb/AAAGAAAAAQAuAPX/AAAGAAAAAQAuAPT/AAAGAAAAAQAuAPP/AAAGAAAAAQAuAPL/AAAGAAAAAQAuAPH/AAAGAAAAAQAuAPD/AAAGAAAAAQAuAO//AAAGAAAAAQAuAO7/AAAGAAAAAQAuAO3/AAAGAAAAAQAuAOz/AAAGAAAAAQAuAOv/AAAGAAAAAQAuAOr/AAAGAAAAAQD//wQAAAAGAAAAAQD//wMAAAAGAAAAAQD//wIAAAAGAAAAAQD//wEAAAAGAAAAAQD//wAAAAAGAAAAAQAMAAAAAAAAAAYAAQANAAAAAAAAAAYAAQAOAAAAAAAAAAYAAQAPAAAAAAAAAAYAAQATAAAAAAAAAAYAAQAUAAAAAAAAAAYAAQAVAAAAAAAAAAYAAQAWAAAAAAAAAAYAAQAbAAAAAAAAAAYAAQAcAAAAAAAAAAYAAQAdAAAAAAAAAAYAAQAeAAAAAAAAAAYAAQAkAAAAAAAAAAYAAQAlAAAAAAAAAAYAAQAmAAAAAAAAAAYAAQAnAAAAAAAAAAYAAQAoAAAAAAAAAAYAAQApAAAAAAAAAAYAAQAqAAAAAAAAAAYAAQArAAAAAAAAAAYAAQAsAAAAAAAAAAYAAQAtAAAAAAAAAAYAAQAtAP3/AAAAAAYAAQAsAP3/AAAAAAYAAQArAP3/AAAAAAYAAQAqAP3/AAAAAAYAAQApAP3/AAAAAAYAAQAjAP3/AAAAAAYAAQAiAP3/AAAAAAYAAQAhAP3/AAAAAAYAAQAgAP3/AAAAAAYAAQAbAP3/AAAAAAYAAQAaAP3/AAAAAAYAAQAZAP3/AAAAAAYAAQAYAP3/AAAAAAYAAQAUAP3/AAAAAAYAAQATAP3/AAAAAAYAAQASAP3/AAAAAAYAAQARAP3/AAAAAAYAAQAMAP3/AAAAAAAAAQANAP3/AAAAAAAAAQAOAP3/AAAAAAAAAQAoAP3/AAAAAAYAAQAnAP3/AAAAAAYAAQAQAPr/AAAAAAAAAQARAPr/AAAAAAAAAQASAPr/AAAAAAAAAQATAPr/AAAAAAAAAQAUAPr/AAAAAAAAAQAWAPb/AAAAAAAAAQAXAPb/AAAAAAAAAQAYAPb/AAAAAAAAAQAZAPb/AAAAAAAAAQAbAPH/AAAAAAAAAQAcAPH/AAAAAAAAAQAdAPH/AAAAAAAAAQAgAPH/AAAAAAYAAQAhAPH/AAAAAAYAAQAiAPH/AAAAAAYAAQAjAPH/AAAAAAYAAQAkAPH/AAAAAAYAAQAoAPH/AAAAAAYAAQApAPH/AAAAAAYAAQAqAPH/AAAAAAYAAQArAPH/AAAAAAYAAQAsAPH/AAAAAAYAAQAtAPH/AAAAAAYAAQAgAOv/AAAAAAAAAQAhAOv/AAAAAAAAAQAiAOv/AAAAAAAAAQAjAOv/AAAAAAAAAQAkAOv/AAAAAAAAAQAlAOv/AAAAAAAAAQAmAOv/AAAAAAAAAQAnAOv/AAAAAAAAAQAoAOv/AAAAAAAAAQApAOv/AAAAAAAAAQAqAOv/AAAAAAAAAQArAOv/AAAAAAAAAQAsAOv/AAAAAAAAAQAtAOv/AAAAAAAAAQAuAOn/AAAGAAAAAQAuAOj/AAAGAAAAAQAuAOf/AAAGAAAAAQAuAOb/AAAGAAAAAQAtAOb/AAAGAAAAAQAsAOb/AAAGAAAAAQArAOb/AAAGAAAAAQAqAOb/AAAGAAAAAQApAOb/AAAGAAAAAQAoAOb/AAAGAAAAAQAnAOb/AAAGAAAAAQAmAOb/AAAGAAAAAQAlAOb/AAAGAAAAAQAkAOb/AAAGAAAAAQAjAOb/AAAGAAAAAQAiAOb/AAAGAAAAAQAhAOb/AAAGAAAAAQAgAOb/AAAGAAAAAQAfAOb/AAAGAAAAAQAeAOb/AAAGAAAAAQAdAOb/AAAGAAAAAQAcAOb/AAAGAAAAAQAbAOb/AAAGAAAAAQAaAOb/AAAGAAAAAQAZAOb/AAAGAAAAAQAYAOb/AAAGAAAAAQAXAOb/AAAGAAAAAQAWAOb/AAAGAAAAAQAVAOb/AAAGAAAAAQAUAOb/AAAGAAAAAQATAOb/AAAGAAAAAQASAOb/AAAGAAAAAQARAOb/AAAGAAAAAQAQAOb/AAAGAAAAAQAPAOb/AAAGAAAAAQAOAOb/AAAGAAAAAQANAOb/AAAGAAAAAQAMAOb/AAAGAAAAAQALAOb/AAAGAAAAAQAKAOb/AAAGAAAAAQAJAOb/AAAGAAAAAQAIAOb/AAAGAAAAAQAHAOb/AAAGAAAAAQAGAOb/AAAGAAAAAQAFAOb/AAAGAAAAAQAEAOb/AAAGAAAAAQADAOb/AAAGAAAAAQACAOb/AAAGAAAAAQABAOb/AAAGAAAAAQAAAOb/AAAGAAAAAQD//+b/AAAGAAAAAQAcAPX/AAAAAAYAAQAdAPX/AAAAAAYAAQAeAPX/AAAAAAYAAQAfAPX/AAAAAAYAAQAjAPT/AAAAAAYAAQAkAPT/AAAAAAYAAQAlAPT/AAAAAAYAAQAmAPT/AAAAAAYAAQAnAPT/AAAAAAYAAQAoAPT/AAAAAAYAAQApAPT/AAAAAAYAAQAqAPT/AAAAAAYAAQArAPT/AAAAAAYAAQAsAPT/AAAAAAYAAQAtAPT/AAAAAAYAAQAtAPf/AAAAAAYAAQAsAPf/AAAAAAYAAQArAPf/AAAAAAYAAQAqAPf/AAAAAAYAAQApAPf/AAAAAAYAAQAoAPf/AAAAAAYAAQAkAPn/AAAAAAYAAQAjAPn/AAAAAAYAAQAiAPn/AAAAAAYAAQAhAPn/AAAAAAYAAQAgAPn/AAAAAAYAAQAfAPn/AAAAAAYAAQAYAPn/AAAAAAYAAQAZAPn/AAAAAAYAAQAaAPn/AAAAAAYAAQAqAAMAAAAKAAQAAQApAAMAAAAKAAQAAQAlAP//AAAKAAQAAQAkAAMAAAAKAAQAAQAiAAMAAAAKAAQAAQAeAAMAAAAKAAQAAQD/////AAAAAAAAAQD+////AAAAAAAAAQD9////AAAAAAAAAQD8////AAAAAAAAAQD7////AAAAAAAAAQD6////AAAAAAAAAQD5////AAAAAAAAAQD4////AAAAAAAAAQD3////AAAAAAAAAQD2////AAAAAAAAAQD2/wAAAAAGAAAAAQD2/wEAAAAGAAAAAQD2/wIAAAAGAAAAAQD2/wMAAAAGAAAAAQD3/wMAAAAGAAAAAQD3/wQAAAAGAAAAAQD4/wQAAAAGAAAAAQD5/wQAAAAGAAAAAQD6/wQAAAAGAAAAAQD7/wQAAAAGAAAAAQD8/wQAAAAGAAAAAQD9/wQAAAAGAAAAAQD+/wQAAAAGAAAAAQD+/wMAAAAGAAAAAQD9/wMAAAAGAAAAAQD8/wMAAAAGAAAAAQD7/wMAAAAGAAAAAQD6/wMAAAAGAAAAAQD6/wIAAAAGAAAAAQD7/wIAAAAGAAAAAQD8/wIAAAAGAAAAAQD9/wIAAAAGAAAAAQD+/wIAAAAGAAAAAQD5/wIAAAAGAAAAAQD6/wEAAAAGAAAAAQD7/wEAAAAGAAAAAQD8/wEAAAAGAAAAAQD9/wEAAAAGAAAAAQD+/wEAAAAGAAAAAQD+/wAAAAAGAAAAAQD9/wAAAAAGAAAAAQD8/wAAAAAGAAAAAQD7/wAAAAAGAAAAAQD6/wAAAAAGAAAAAQD5/wAAAAAGAAAAAQD4/wAAAAAGAAAAAQD3/wAAAAAGAAAAAQD3/wEAAAAGAAAAAQD3/wIAAAAGAAAAAQD4/wIAAAAGAAAAAQD5/wEAAAAGAAAAAQD4/wEAAAAGAAAAAQD4/wMAAAAGAAAAAQD5/wMAAAAGAAAAAQD2/wQAAAAGAAAAAQD1/wQAAAAGAAAAAQD1/wMAAAAGAAAAAQD1/wIAAAAGAAAAAQD1/wEAAAAGAAAAAQD1/wAAAAAGAAAAAQD1////AAAGAAAAAQD1//7/AAAGAAAAAQD1//3/AAAGAAAAAQD1//z/AAAGAAAAAQD1//v/AAAGAAAAAQD1//r/AAAGAAAAAQD1//n/AAAGAAAAAQD1//j/AAAGAAAAAQD1//f/AAAGAAAAAQD1//b/AAAGAAAAAQD1//X/AAAGAAAAAQD1//T/AAAGAAAAAQD1//P/AAAGAAAAAQD1//L/AAAGAAAAAQD1//D/AAAGAAAAAQD1/+//AAAGAAAAAQD1//H/AAAGAAAAAQD1/+7/AAAGAAAAAQD1/+3/AAAGAAAAAQD1/+z/AAAGAAAAAQD1/+v/AAAGAAAAAQD1/+r/AAAGAAAAAQD1/+n/AAAGAAAAAQD1/+j/AAAGAAAAAQD1/+f/AAAGAAAAAQD1/+b/AAAGAAAAAQD2/+b/AAAGAAAAAQD3/+b/AAAGAAAAAQD4/+b/AAAGAAAAAQD5/+b/AAAGAAAAAQD6/+b/AAAGAAAAAQD7/+b/AAAGAAAAAQD8/+b/AAAGAAAAAQD9/+b/AAAGAAAAAQD+/+b/AAAGAAAAAQA=")
+tile_set = SubResource("TileSet_31wal")
 
-[node name="SpkieAll" type="Node" parent="."]
+[node name="spikes" type="Node" parent="."]
 
-[node name="Spike" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+[node name="Spike" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
 position = Vector2(231, 56)
 
-[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike"]
+[node name="Area2D2" type="Area2D" parent="spikes/Spike" groups=["spikes"]]
 collision_layer = 4
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike/Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike/Area2D2" groups=["spikes"]]
 shape = SubResource("RectangleShape2D_54rcs")
 
-[node name="Spike2" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+[node name="Spike2" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
 position = Vector2(328, 55)
 
-[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike2"]
+[node name="Area2D2" type="Area2D" parent="spikes/Spike2" groups=["spikes"]]
 collision_layer = 4
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike2/Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike2/Area2D2" groups=["spikes"]]
 shape = SubResource("RectangleShape2D_54rcs")
 
-[node name="Spike3" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+[node name="Spike3" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
 position = Vector2(423, 55)
 
-[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike3"]
+[node name="Area2D2" type="Area2D" parent="spikes/Spike3" groups=["spikes"]]
 collision_layer = 4
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike3/Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike3/Area2D2" groups=["spikes"]]
 shape = SubResource("RectangleShape2D_54rcs")
 
-[node name="Spike4" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+[node name="Spike4" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
 position = Vector2(518, 55)
 
-[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike4"]
+[node name="Area2D2" type="Area2D" parent="spikes/Spike4" groups=["spikes"]]
 collision_layer = 4
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike4/Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike4/Area2D2" groups=["spikes"]]
 shape = SubResource("RectangleShape2D_54rcs")
 
-[node name="Spike5" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+[node name="Spike5" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
 position = Vector2(616, 59)
 
-[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike5"]
+[node name="Area2D2" type="Area2D" parent="spikes/Spike5" groups=["spikes"]]
 collision_layer = 4
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike5/Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike5/Area2D2" groups=["spikes"]]
+position = Vector2(0, -5)
 shape = SubResource("RectangleShape2D_54rcs")
 
-[node name="Spike6" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+[node name="Spike6" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
 position = Vector2(710, 54)
 
-[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike6"]
+[node name="Area2D2" type="Area2D" parent="spikes/Spike6" groups=["spikes"]]
 collision_layer = 2
 collision_mask = 4
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike6/Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike6/Area2D2" groups=["spikes"]]
 shape = SubResource("RectangleShape2D_54rcs")
 
-[node name="Spike7" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+[node name="Spike7" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
 position = Vector2(664, -7)
 
-[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike7"]
+[node name="Area2D2" type="Area2D" parent="spikes/Spike7" groups=["spikes"]]
 collision_layer = 4
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike7/Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike7/Area2D2" groups=["spikes"]]
 shape = SubResource("RectangleShape2D_54rcs")
 
-[node name="Spike8" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+[node name="Spike8" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
 position = Vector2(682, -58)
 
-[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike8"]
+[node name="Area2D2" type="Area2D" parent="spikes/Spike8" groups=["spikes"]]
 collision_layer = 4
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike8/Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike8/Area2D2" groups=["spikes"]]
 shape = SubResource("RectangleShape2D_54rcs")
 
-[node name="Spike9" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+[node name="Spike9" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
 position = Vector2(472, -8)
 
-[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike9"]
+[node name="Area2D2" type="Area2D" parent="spikes/Spike9" groups=["spikes"]]
 collision_layer = 4
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike9/Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike9/Area2D2" groups=["spikes"]]
 shape = SubResource("RectangleShape2D_54rcs")
 
-[node name="Spike10" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+[node name="Spike10" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
 position = Vector2(552, -55)
 
-[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike10"]
+[node name="Area2D2" type="Area2D" parent="spikes/Spike10" groups=["spikes"]]
 collision_layer = 4
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike10/Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike10/Area2D2" groups=["spikes"]]
 shape = SubResource("RectangleShape2D_54rcs")
 
-[node name="Spike11" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+[node name="Spike11" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
 position = Vector2(550, -122)
 
-[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike11"]
+[node name="Area2D2" type="Area2D" parent="spikes/Spike11" groups=["spikes"]]
 collision_layer = 4
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike11/Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike11/Area2D2" groups=["spikes"]]
 shape = SubResource("RectangleShape2D_54rcs")
 
-[node name="Spike12" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+[node name="Spike12" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
 position = Vector2(679, -154)
 
-[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike12"]
+[node name="Area2D2" type="Area2D" parent="spikes/Spike12" groups=["spikes"]]
 collision_layer = 4
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike12/Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike12/Area2D2" groups=["spikes"]]
 shape = SubResource("RectangleShape2D_54rcs")
 
-[node name="Spike13" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+[node name="Spike13" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
 position = Vector2(584, -202)
 
-[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike13"]
+[node name="Area2D2" type="Area2D" parent="spikes/Spike13" groups=["spikes"]]
 collision_layer = 4
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike13/Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike13/Area2D2" groups=["spikes"]]
 shape = SubResource("RectangleShape2D_54rcs")
 
-[node name="Spike14" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+[node name="Spike14" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
 position = Vector2(696, -249)
 
-[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike14"]
+[node name="Area2D2" type="Area2D" parent="spikes/Spike14" groups=["spikes"]]
 collision_layer = 4
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike14/Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike14/Area2D2" groups=["spikes"]]
 shape = SubResource("RectangleShape2D_54rcs")
 
-[node name="Spike15" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+[node name="Spike15" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
 position = Vector2(569, -248)
 
-[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike15"]
+[node name="Area2D2" type="Area2D" parent="spikes/Spike15" groups=["spikes"]]
 collision_layer = 4
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike15/Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike15/Area2D2" groups=["spikes"]]
 shape = SubResource("RectangleShape2D_54rcs")
 
-[node name="Spike16" parent="SpkieAll" instance=ExtResource("2_81yfc")]
+[node name="Spike16" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
 position = Vector2(696, -249)
 
-[node name="Area2D2" type="Area2D" parent="SpkieAll/Spike16"]
+[node name="Area2D2" type="Area2D" parent="spikes/Spike16" groups=["spikes"]]
 position = Vector2(-16, 46)
 collision_layer = 4
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SpkieAll/Spike16/Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike16/Area2D2" groups=["spikes"]]
 shape = SubResource("RectangleShape2D_54rcs")
 
-[node name="Area2D 1" type="Area2D" parent="."]
-position = Vector2(33, 0)
+[node name="Spike17" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
+position = Vector2(588, 59)
+
+[node name="Area2D2" type="Area2D" parent="spikes/Spike17" groups=["spikes"]]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike17/Area2D2" groups=["spikes"]]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_54rcs")
+
+[node name="Spike18" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
+position = Vector2(559, 59)
+
+[node name="Area2D2" type="Area2D" parent="spikes/Spike18" groups=["spikes"]]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike18/Area2D2" groups=["spikes"]]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_54rcs")
+
+[node name="Spike19" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
+position = Vector2(661, 56)
+
+[node name="Area2D2" type="Area2D" parent="spikes/Spike19" groups=["spikes"]]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike19/Area2D2" groups=["spikes"]]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_54rcs")
+
+[node name="Spike20" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
+position = Vector2(684, 56)
+
+[node name="Area2D2" type="Area2D" parent="spikes/Spike20" groups=["spikes"]]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike20/Area2D2" groups=["spikes"]]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_54rcs")
+
+[node name="Spike21" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
+position = Vector2(601, -9)
+
+[node name="Area2D2" type="Area2D" parent="spikes/Spike21" groups=["spikes"]]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike21/Area2D2" groups=["spikes"]]
+shape = SubResource("RectangleShape2D_54rcs")
+
+[node name="Spike22" parent="spikes" groups=["spikes"] instance=ExtResource("2_81yfc")]
+position = Vector2(483, 55)
+
+[node name="Area2D2" type="Area2D" parent="spikes/Spike22" groups=["spikes"]]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/Spike22/Area2D2" groups=["spikes"]]
+shape = SubResource("RectangleShape2D_54rcs")
+
+[node name="Finish" type="Area2D" parent="." groups=["finish"]]
+position = Vector2(729, -119)
 script = ExtResource("3_ex5br")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D 1"]
-position = Vector2(216, -134)
-shape = SubResource("RectangleShape2D_81yfc")
-
-[node name="Area2D 2" type="Area2D" parent="."]
-position = Vector2(129, 0)
-script = ExtResource("3_ex5br")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D 2"]
-position = Vector2(216, -134)
-shape = SubResource("RectangleShape2D_81yfc")
-
-[node name="Area2D 3" type="Area2D" parent="."]
-position = Vector2(144, 0)
-script = ExtResource("3_ex5br")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D 3"]
-position = Vector2(296, -134)
-shape = SubResource("RectangleShape2D_81yfc")
-
-[node name="Area2D 4" type="Area2D" parent="."]
-position = Vector2(240, 0)
-script = ExtResource("3_ex5br")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D 4"]
-position = Vector2(296, -134)
-shape = SubResource("RectangleShape2D_81yfc")
-
-[node name="Area2D 5" type="Area2D" parent="."]
-position = Vector2(335, 0)
-script = ExtResource("3_ex5br")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D 5"]
-position = Vector2(296, -134)
-shape = SubResource("RectangleShape2D_81yfc")
-
-[node name="Finish" type="Area2D" parent="."]
-position = Vector2(354, 0)
-script = ExtResource("4_5mejs")
+checkpoint_index = 1000
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Finish"]
-position = Vector2(375, -134)
+position = Vector2(0, -37)
 shape = SubResource("RectangleShape2D_81yfc")
 
-[node name="GAController" type="Node2D" parent="."]
-position = Vector2(9, 6)
-script = ExtResource("5_s12we")
-perso_scene = ExtResource("6_54rcs")
-spawn_pos = Vector2(9, 6)
+[node name="checkpoints" type="Node" parent="."]
+
+[node name="Area2D 1" type="Area2D" parent="checkpoints" groups=["checkpoints"]]
+position = Vector2(248, -107)
+script = ExtResource("3_ex5br")
+checkpoint_index = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoints/Area2D 1"]
+position = Vector2(0, -37)
+shape = SubResource("RectangleShape2D_81yfc")
+
+[node name="Area2D 2" type="Area2D" parent="checkpoints" groups=["checkpoints"]]
+position = Vector2(346, -107)
+script = ExtResource("3_ex5br")
+checkpoint_index = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoints/Area2D 2"]
+position = Vector2(0, -44)
+shape = SubResource("RectangleShape2D_81yfc")
+
+[node name="Area2D 3" type="Area2D" parent="checkpoints" groups=["checkpoints"]]
+position = Vector2(441, -108)
+script = ExtResource("3_ex5br")
+checkpoint_index = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoints/Area2D 3"]
+position = Vector2(0, -42)
+shape = SubResource("RectangleShape2D_81yfc")
+
+[node name="Area2D 4" type="Area2D" parent="checkpoints" groups=["checkpoints"]]
+position = Vector2(537, -118)
+script = ExtResource("3_ex5br")
+checkpoint_index = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoints/Area2D 4"]
+position = Vector2(0, -34)
+shape = SubResource("RectangleShape2D_81yfc")
+
+[node name="Area2D 5" type="Area2D" parent="checkpoints" groups=["checkpoints"]]
+position = Vector2(634, -117)
+script = ExtResource("3_ex5br")
+checkpoint_index = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoints/Area2D 5"]
+position = Vector2(0, -35)
+shape = SubResource("RectangleShape2D_81yfc")
+
+[node name="SpawnPoint" type="Marker2D" parent="."]
+position = Vector2(-121, -37)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(392, -132)
 
-[node name="SpawnPoint" type="Marker2D" parent="."]
-position = Vector2(8, -25)
+[node name="GA_Manager" parent="." node_paths=PackedStringArray("spawn_point") instance=ExtResource("4_5mejs")]
+bot_scene = ExtResource("5_s12we")
+spawn_point = NodePath("../SpawnPoint")
